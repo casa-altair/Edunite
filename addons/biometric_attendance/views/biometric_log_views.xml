@@ -1,0 +1,89 @@
+<!-- biometric_attendance/views/biometric_log_views.xml
+<odoo>
+    <record id="view_biometric_log_tree" model="ir.ui.view">
+        <field name="name">biometric.log.tree</field>
+        <field name="model">biometric.log</field>
+        <field name="arch" type="xml">
+            <tree string="Biometric Logs">
+                <field name="uid"/>
+                <field name="name"/>
+                <field name="timestamp"/>
+                <field name="status"/>
+                <field name="message"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_biometric_log_form" model="ir.ui.view">
+        <field name="name">biometric.log.form</field>
+        <field name="model">biometric.log</field>
+        <field name="arch" type="xml">
+            <form string="Biometric Log">
+                <group>
+                <field name="uid"/>
+                    <field name="uid"/>
+                    <field name="name"/>
+                    <field name="timestamp"/>
+                    <field name="status"/>
+                    <field name="message"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_biometric_log" model="ir.actions.act_window">
+        <field name="name">Biometric Logs</field>
+        <field name="res_model">biometric.log</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_biometric_log_root" name="Biometric Logs" sequence="100"/>
+    <menuitem id="menu_biometric_log" name="Logs" parent="menu_biometric_log_root" action="action_biometric_log"/>
+</odoo> -->
+
+<odoo>
+  <record id="view_biometric_log_tree" model="ir.ui.view">
+    <field name="name">biometric.log.tree</field>
+    <field name="model">biometric.log</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="timestamp"/>
+        <field name="uid"/>
+        <field name="employee_id"/> <!-- Added Employee Name -->
+        <field name="status"/>
+        <field name="message"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_biometric_log_form" model="ir.ui.view">
+    <field name="name">biometric.log.form</field>
+    <field name="model">biometric.log</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="timestamp"/>
+            <field name="uid"/>
+            <field name="employee_id"/>
+            <field name="status"/>
+            <field name="message"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_biometric_log" model="ir.actions.act_window">
+    <field name="name">Biometric Logs</field>
+    <field name="res_model">biometric.log</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p>Biometric scan logs will appear here.</p>
+    </field>
+  </record>
+
+  <menuitem id="menu_biometric_attendance_root" name="Biometric Attendance" sequence="10" groups="hr.group_hr_user"/>
+  <menuitem id="menu_biometric_log" name="Biometric Logs" parent="menu_biometric_attendance_root" action="action_biometric_log" sequence="20" groups="hr.group_hr_user"/>
+</odoo>
+

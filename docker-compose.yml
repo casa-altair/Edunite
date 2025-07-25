@@ -1,0 +1,31 @@
+services:
+  web1:
+    image: odoo:16.0
+    container_name: school_management_web
+    depends_on:
+      - db
+    ports:
+      - "8005:8069"  # Expose Odoo on port 8005 instead of 8069
+    volumes:
+      - ./web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=wxufCjv1WXS9asw
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=wxufCjv1WXS9asw
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ./db-data:/var/lib/postgresql/data/pgdata
+# sudo docker exec -it --user root 6d5c78bc5bab bash -> chown -R odoo:odoo /var/lib/odoo && chmod -R 775 /var/lib/odoo
