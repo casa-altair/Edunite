@@ -135,30 +135,15 @@
     </record>
     <!--Academic Year  Information-->
     <record id="demo_academic_year_1" model="academic.year">
-            <field
-            eval="'Academic Year ' + str((DateTime.today() - relativedelta(years=1)).strftime('%Y'))"
-            name="name"
-        />
-            <field
-            eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y')"
-            name="code"
-        />
-            <field name="sequence">1</field>
+            <field eval="'Academic Year ' + str((DateTime.today() - relativedelta(years=1)).strftime('%Y'))" name="name">
+            <field eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y')" name="code">
             <field name="grade_id" ref="demo_student_grade_1" />
-            <field
-            eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-01-01 %H:%M')"
-            name="date_start"
-        />
-            <field
-            eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-12-31 %H:%M')"
-            name="date_stop"
-        />
+            <field eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-01-01 %H:%M')" name="date_start">
+            <field eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-12-31 %H:%M')" name="date_stop">
+            <field name="sequence">1</field>
     </record>
     <record id="demo_academic_year_2" model="academic.year">
-           <field
-            eval="'Academic Year ' + str((DateTime.today()).strftime('%Y'))"
-            name="name"
-        />
+           <field eval="'Academic Year ' + str((DateTime.today()).strftime('%Y'))" name="name">
            <field eval="(DateTime.today()).strftime('%Y')" name="code" />
            <field name="sequence">2</field>
            <field name="current" eval="True" />
