@@ -8,3 +8,4 @@
 
 ### Version 1.1
 - In Assignment module, added a security group for teachers to reject assignments.
+- Changed message where teachers are requested to validate all student assignments before marking the assignment as done.

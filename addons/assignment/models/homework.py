@@ -111,7 +111,7 @@ class SchoolTeacherAssignment(models.Model):
         """Changes the state to done"""
         states = self.student_assign_ids.mapped("state")
         if not all(state == "done" for state in states):
-            raise ValidationError(_("You cannot confirm the assignment"))
+            raise ValidationError(_("You are requested to validate all student assignments before marking the assignment as done."))
         self.state = "done"
 
     def unlink(self):
