@@ -152,18 +152,6 @@ class StudentStudent(models.Model):
         help="Enter student admission date",
     )
     leave_date = fields.Date(help="Enter student leave date")
-    middle = fields.Char(
-        "Middle Name",
-        required=True,
-        states={"done": [("readonly", True)]},
-        help="Enter student middle name",
-    )
-    last = fields.Char(
-        "Surname",
-        required=True,
-        states={"done": [("readonly", True)]},
-        help="Enter student last name",
-    )
     gender = fields.Selection(
         [("male", "Male"), ("female", "Female")],
         states={"done": [("readonly", True)]},

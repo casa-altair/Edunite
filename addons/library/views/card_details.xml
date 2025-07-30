@@ -38,14 +38,6 @@
                                                 <strong>
                                                     <span t-field="o.student_id.name" />
                                                 </strong>
-                                                <strong>
-                                                    <span
-                                                        t-field="o.student_id.middle"
-                                                    />
-                                                </strong>
-                                                <strong>
-                                                    <span t-field="o.student_id.last" />
-                                                </strong>
                                             </t>
                                             <t t-else="o.teacher_id">
                                                 <strong>

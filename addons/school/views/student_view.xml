@@ -72,19 +72,7 @@
                                 attrs="{'readonly':[('state','in',['alumni','terminate'])]}"
                             />
                             <br />
-                            <field
-                                name="middle"
-                                placeholder="Middle Name"
-                                nolabel="1"
-                                attrs="{'readonly':[('state','in',['alumni','terminate'])]}"
-                            />
-                            <br />
-                            <field
-                                name="last"
-                                placeholder="Last Name"
-                                nolabel="1"
-                                attrs="{'readonly':[('state','in',['alumni','terminate'])]}"
-                            />
+                            
                             <br />
                             <field name="pid" invisible="1" />
                         </div>
@@ -323,8 +311,6 @@
                             >
                                 <tree editable="top">
                                     <field name="name" />
-                                    <field name="middle" />
-                                    <field name="last" />
                                     <field name="designation" string="Designation" />
                                     <field name="phone" string="Phone" />
                                     <field name="gender" string="Gender" />
@@ -334,15 +320,10 @@
                                         <field name="name" placeholder="First Name" />
                                         <field name="gender" string="Gender" />
                                         <field
-                                            name="middle"
-                                            placeholder="Middle Name"
-                                        />
-                                        <field
                                             name="designation"
                                             placeholder="Designation"
                                             string="Designation"
                                         />
-                                        <field name="last" placeholder="Last Name" />
                                         <field
                                             name="phone"
                                             placeholder="Phone Number"
@@ -810,8 +791,6 @@
                                                 <h4>
                                                     <a type="open">
                                                         <field name="name" />&#x2063;
-                                                        <field name="middle" />&#x2063;
-                                                        <field name="last" />
                                                         <field
                                                             name="student_name"
                                                             invisible="1"
@@ -993,20 +972,6 @@
                                 required="1"
                                 attrs="{'readonly':[('state','=','alumni')]}"
                                 style="font-size: min(4vw, 2.6rem);"
-                            />
-                                <br />
-                                <field
-                                name="middle"
-                                placeholder="Middle Name"
-                                nolabel="1"
-                                attrs="{'readonly':[('state','=','alumni')]}"
-                            />
-                                <br />
-                                <field
-                                name="last"
-                                placeholder="Last Name"
-                                nolabel="1"
-                                attrs="{'readonly':[('state','=','alumni')]}"
                             />
                                 <br />
                                 <field name="active" invisible="1" />
@@ -1206,8 +1171,6 @@
                             >
                                 <tree editable="top">
                                     <field name="name" placeholder="Firstname" />
-                                    <field name="middle" placeholder="Middlename" />
-                                    <field name="last" placeholder="Surname" />
                                     <field
                                         name="designation"
                                         placeholder="Designation"
@@ -1223,11 +1186,6 @@
                                             placeholder="First Name"
                                             required="True"
                                         />
-                                        <field
-                                            name="middle"
-                                            placeholder="Middle Name"
-                                        />
-                                        <field name="last" placeholder="Last Name" />
                                         <field
                                             name="designation"
                                             placeholder="Designation"

@@ -47,8 +47,6 @@
                                             </td>
                                             <td>
                                                 <span t-field="student.name" />
-                                                <span t-field="student.middle" />
-                                                <span t-field="student.last" />
                                             </td>
                                         </tr>
                                         <tr>

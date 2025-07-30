@@ -819,11 +819,7 @@ class StudentReference(models.Model):
     reference_id = fields.Many2one(
         "student.student", "Student", help="Student reference"
     )
-    name = fields.Char(string="First Name", required=True, help="Student name")
-    middle = fields.Char(
-        string="Middle Name", required=True, help="Student middle name"
-    )
-    last = fields.Char(string="Surname", required=True, help="Student last name")
+    name = fields.Char(string="Full Name", required=True, help="Student name")
     designation = fields.Char(required=True, help="Student designation")
     phone = fields.Char(required=True, help="Student phone")
     gender = fields.Selection(

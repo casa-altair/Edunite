@@ -29,8 +29,6 @@
                                     style="font-family: 'Helvetica';font-size: 18px;"
                                 >
                                 <span t-field="result.sudo().name" />
-                                <span t-field="result.middle" />
-                                <span t-field="result.last" />
                             </td>
                         </tr>
                         <tr>

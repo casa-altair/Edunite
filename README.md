@@ -9,3 +9,7 @@
 ### Version 1.1
 - In Assignment module, added a security group for teachers to reject assignments.
 - Changed message where teachers are requested to validate all student assignments before marking the assignment as done.
+
+### Version 1.2
+- In School module, removed the middle name and last name fields from the student model.
+- Added a full name field to the student model.
