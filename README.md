@@ -1,5 +1,12 @@
 # Edunite: The School Management System
 
+| Version | Documentation |
+| :-------: | :------------- |
+| 1.0 | Initial Download and installation on odoo platform |
+| 1.1 | In Assignment module, added a security group for teachers to reject assignments. Changed message where teachers are requested to validate all student assignments before marking the assignment as done. |
+| 1.2 | In School module, removed the middle name and last name fields from the student model. Added a full name field to the student model. |
+| 1.3 | Removed zip files and unwanted files from the repository. |
+
 ## Version Updates
 ### Version 1.0
 - Initial Download and installation on odoo platform

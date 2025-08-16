@@ -3,8 +3,8 @@
 {
     "name": "School",
     "version": "1.2",
-    "author": "Serpent Consulting Services Pvt. Ltd.",
-    "website": "http://www.serpentcs.com",
+    "author": "Casaaltair Technologies Private Limited",
+    "website": "http://www.casaaltair.com",
     "category": "School Management",
     "license": "AGPL-3",
     "complexity": "easy",

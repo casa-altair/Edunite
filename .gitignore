@@ -212,3 +212,9 @@ web-data/
 db-data/
 *.pdf
 *.zip
+.git
+db-data/
+db-data-bk/
+web-data/
+web-data-bk/
+*.rst

@@ -3,8 +3,8 @@
 {
     "name": "Assignment Management",
     "version": "1.1",
-    "author": "Serpent Consulting Services Pvt. Ltd.",
-    "website": "http://www.serpentcs.com",
+    "author": "Casaaltair Technologies Private Limited",
+    "website": "http://www.casaaltair.com",
     "license": "AGPL-3",
     "category": "School Management",
     "summary": "A Module For Assignment Management In School",

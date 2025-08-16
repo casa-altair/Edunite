@@ -3,9 +3,9 @@
 {
     "name": "Hostel Management for Education ERP",
     "version": "16.0.1.0.0",
-    "author": "Serpent Consulting Services Pvt. Ltd.",
+    "author": "Casaaltair Technologies Private Limited",
     "category": "School Management",
-    "website": "http://www.serpentcs.com",
+    "website": "http://www.casaaltair.com",
     "license": "AGPL-3",
     "complexity": "easy",
     "summary": "Module For HOSTEL Management In School",
